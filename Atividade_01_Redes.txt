@@ -1,0 +1,34 @@
+1A. O IP da minha máquina é: 192.168.1.31.
+Ele apresenta informações como sufixo DNS, endereço IPv4, máscara da sub-rede e gateway padrão das conexões.
+
+1B. O meu IPv4 é igual ao Local IP mostrado no site whatismyip.com, porém meu 'IPv4 público' mostrado no site não consta na lista de endereços mostrados no ipconfig. Aparentemente, isso acontece porque meu computador se conecta à internet através de um roteador.
+
+1C. É como se fosse a porta padrão por onde pedidos e envios de pacote são feitos. É um aparelho de intermédio entre a rede local e a internet. A palavra 'padrão' significa que é o aparelho padrão que é procurado para quando informações necessitam ser enviadas através da rede.
+
+2. O comando retorna o endereço IP do alvo, a quantidade de bytes usados, o tempo de resposta e o TTL (Time To Live), os pacotes enviados/recebidos/perdidos, tempo em ms mínimo/máximo/médio.
+TTL é um mecanismo que limita o tempo de vida do dado em um computador ou rede. Assim que o tempo termina, o dado é descartado. TTL previne que um pacote de dados circule indefinidamente. Aparentemente é utilizado para melhorar performance de caching. E o tempo de resposta representa o tempo que levou pro meu pacote chegar até o destino e voltar até mim.
+
+3. A opção '-n' apresenta o endereço externo em forma numérica.
+
+4. Amazon, Blizzard, Google, WhatsApp, Dropbox, Fastly, Akamai, CERFnet, Telêfonica Brasil S.A, IANA.
+
+5A. O comando entende por salto o número de vezes que o pacote é passado para um próximo aparelho de rede, como um bridge, roteador ou gateway, entre a origem e o destino.
+
+5B. Os pacotes passaram por 10 IPs diferentes, contando o destino.
+
+5C. Sim, apareceram 3. Isso ocorre porque o 'enviador' espera uma resposta dentro de um número de segundos especificado, se o pacote não é reconhecido dentro do intervalo esperado, um asterisco é mostrado.
+
+5D. Ele dá as opções de -d/-h/-j/-w/-R/-S/-4/-6.
+-d - não resolver endereços para nomes de hosts.
+-h nmax_saltos - número máximo de saltos para a procura do destino.
+-j lst_hosts - rota ampliada de origens usada com a lista lst_hosts (só IPv4).
+-w tempo_limite - tempo de espera em milissegundos para cada resposta.
+-R traça caminho de transmissão e retransmissão (só IPv6).
+-S srcaddr - endereço de origem para uso (só IPv6).
+-4 - força usando IPv4.
+-6 - força usando IPv6.
+
+6. www.ietr.fr
+Brasil -> Espanha -> Estados Unidos -> Irlanda -> França.
+www.whitehouse.gov
+Brasil -> Espanha -> Estados Unidos.
